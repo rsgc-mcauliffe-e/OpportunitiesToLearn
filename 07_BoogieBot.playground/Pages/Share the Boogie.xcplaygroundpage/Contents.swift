@@ -15,26 +15,23 @@ startRecording()
  Remember, once BoogieBot gets to the end of the routine it will stop. You can use Editor > Execute Playground to see the moves again. Have fun!
 */
 // If you're going to send it, sign it.
-setBotTitle("The next dance craze")
-setBotSubtitle("You saw it here first!")
+setBotTitle("bot")
+setBotSubtitle("bot")
 // Start the dance!
+func dance(){
 fabulize()
 leftArmUp()
-rightArmUp()
-
-leftLegUp()
-rightLegUp()
 leftLegDown()
 rightLegDown()
 shakeItLeft()
-shakeItRight()
-shakeItCenter()
-jumpUp()
-jumpDown()
+rightArmUp()
 
-leftArmDown()
-rightArmDown()
+leftLegUp()
+leftLegDown()
+rightLegDown()
 defabulize()
+}
+dance()
 
 //: Next, find out a new term for the work you’ve been doing. 
 //:

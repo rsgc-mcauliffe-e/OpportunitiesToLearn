@@ -21,8 +21,14 @@ startRecording()
 
 
 
-
-
+func dance() {
+	shakeItLeft()
+	shakeItRight()
+	shakeItCenter()
+}
+dance()
+dance()
+dance()
 
 
 

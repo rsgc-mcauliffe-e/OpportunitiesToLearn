@@ -18,8 +18,11 @@
  */
 startBot()
 startRecording()
+setBotSubtitle("bot")
 
-
+func a(){
+	jumpDown()
+}
 
 
 

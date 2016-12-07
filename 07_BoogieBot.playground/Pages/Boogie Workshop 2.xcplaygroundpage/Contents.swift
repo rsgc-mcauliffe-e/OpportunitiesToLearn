@@ -18,9 +18,13 @@
  */
 startBot()
 startRecording()
-
-
-
+func dance(){
+jumpUp()
+jumpDown()
+}
+dance()
+dance()
+dance()
 
 
 

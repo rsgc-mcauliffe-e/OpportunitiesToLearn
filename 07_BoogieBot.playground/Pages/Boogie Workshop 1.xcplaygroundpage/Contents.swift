@@ -18,9 +18,33 @@
 */
 startBot()
 startRecording()
-
-
-
+setBotTitle("bot")
+setBotSubtitle("bot")
+func doDance(){
+	rightArmUp()
+	rightArmDown()
+	leftArmUp()
+	leftArmDown()
+	shakeItRight()
+	shakeItLeft()
+	shakeItCenter()
+	rightLegUp()
+	rightLegDown()
+	leftLegUp()
+	leftLegDown()
+	jumpUp()
+	jumpDown()
+}
+doDance()
+doDance()
+doDance()
+doDance()
+doDance()
+doDance()
+doDance()
+doDance()
+doDance()
+doDance()
 
 
 
