@@ -2,6 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CustomAnimation.playground">
+   </FileRef>
+   <FileRef
+      location = "group:SpriteKit 2.playground">
+   </FileRef>
+   <FileRef
+      location = "group:15_Structures.playground">
+   </FileRef>
+   <FileRef
+      location = "group:19_EnumsAndSwitch.playground">
+   </FileRef>
+   <FileRef
+      location = "group:12_InstancesMethodsProperties.playground">
+   </FileRef>
+   <FileRef
       location = "group:07_BoogieBot.playground">
    </FileRef>
    <FileRef
