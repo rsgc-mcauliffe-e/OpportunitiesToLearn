@@ -75,11 +75,11 @@ anotherExampleObject.myVariable
  - callout(Challenge): Update each objects variable to contain new values and print them out!
 
  */
+objectCreatedFromExample.myVariable = "wooo shamalamadingdong"
+anotherExampleObject.myVariable = "glub a lub a dub dub"
 
-
-
-
-
+print(objectCreatedFromExample)
+print(anotherExampleObject)
 /*:
 
  # Methods
@@ -133,20 +133,24 @@ AnotherExampleObject.myVariable
 
 class Tiger {
     // put your instance variables here!
-
+	let name : String
+	let favouriteFood = "meat"
 
     init(name: String) {
         // put your initializer content here
-
+		self.name = name
     }
 
     func sleep() {
         // complete your sleep function here, noting the change from global to instance variables
-
+		print("\(self.name) sleeps for 8 hours")
     }
 
     func eat(food: String) {
         // complete your eat function here!
+		print("\(self.name) eats \(food)")
+		if food == self.favouriteFood {
+			print("YUM!!! \(self.name) wants more \(food)")
 
     }
 }
