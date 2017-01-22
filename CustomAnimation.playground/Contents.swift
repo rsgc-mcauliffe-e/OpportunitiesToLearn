@@ -12,10 +12,10 @@ var scene = SKScene(size: frame.size)
 let bground = SKSpriteNode(imageNamed: "ovalOffice.jpg")
 
 let bill = SKSpriteNode(imageNamed: "hqdefault")
-let frog = SKSpriteNode(imageNamed: "forg.jpg")
+let frog = SKSpriteNode(imageNamed: "forg.png")
 bground.position = midPoint
 bground.zPosition = 0 //ensures the background is the furthest back object
-frog.position = midPoint
+frog.position = CGPoint(x: 325, y: 10)
 bill.position = midPoint
 frog.setScale(0.3)
 bill.setScale(0.3)
@@ -29,9 +29,12 @@ let actionMoveDown = SKAction.moveBy(x: 0, y: -40, duration: 1)
 let actionSequence = SKAction.sequence([actionMoveUp, actionMoveDown, rotate])
 let actionRepeat = SKAction.repeatForever(actionSequence)
 
-bill.run(actionRepeat)
-bill.zPosition = 2  // Ensure sprite is above background and frog
 
+let actionFly = SKAction.moveBy(x: -400, y: 400, duration: 7)
+
+bill.run(actionRepeat)
+frog.run(actionFly)
+bill.zPosition = 2  // Ensure sprite is above background and frog
 
 scene.addChild(bill) // Add to the scene
 scene.addChild(bground)
