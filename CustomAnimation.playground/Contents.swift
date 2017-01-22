@@ -30,9 +30,9 @@ let wait = SKAction.wait(forDuration: 10)
 
 // bill's actions
 let rotate = SKAction.rotate(byAngle: 3*(CGFloat.pi), duration: 3) // rotates bill 1.5 times
-let actionMoveUp = SKAction.moveBy(x: 0, y: 40, duration: 1)//moves bill up
-let actionMoveDown = SKAction.moveBy(x: 0, y: -40, duration: 1)//moves bill down
-let actionSequence = SKAction.sequence([actionMoveUp, actionMoveDown, rotate])// creates one smooth animation sequence of bill bouncing and rotating
+let actionBounceUp = SKAction.moveBy(x: 0, y: 40, duration: 1)//moves bill up
+let actionBounceDown = SKAction.moveBy(x: 0, y: -40, duration: 1)//moves bill down
+let actionSequence = SKAction.sequence([actionBounceUp, actionBounceDown, rotate])// creates one smooth animation sequence of bill bouncing and rotating
 let billActionRepeat = SKAction.repeatForever(actionSequence)//states that the bill animation should repeat forever
 
 
