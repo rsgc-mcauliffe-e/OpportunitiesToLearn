@@ -9,14 +9,18 @@ let midPoint = CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0)
 
 var scene = SKScene(size: frame.size)
 
+let bground = SKSpriteNode(imageNamed: "ovalOffice.jpg")
+
 let bill = SKSpriteNode(imageNamed: "hqdefault")
-let forg = SKSpriteNode(imageNamed: "forg.jpg")
-forg.position = midPoint
+let frog = SKSpriteNode(imageNamed: "forg.jpg")
+bground.position = midPoint
+bground.zPosition = 0 //ensures the background is the furthest back object
+frog.position = midPoint
 bill.position = midPoint
-forg.setScale(0.3)
+frog.setScale(0.3)
 bill.setScale(0.3)
 
-let wait = SKAction.wait(10)
+let wait = SKAction.wait(forDuration: 10)
 
 let rotate = SKAction.rotate(byAngle: 3*(CGFloat.pi), duration: 3)
 
@@ -26,11 +30,14 @@ let actionSequence = SKAction.sequence([actionMoveUp, actionMoveDown, rotate])
 let actionRepeat = SKAction.repeatForever(actionSequence)
 
 bill.run(actionRepeat)
-bill.zPosition = 10  // Ensure sprite is above background
+bill.zPosition = 2  // Ensure sprite is above background and frog
+
+
 scene.addChild(bill) // Add to the scene
+scene.addChild(bground)
+scene.addChild(frog)
 
-
-//: Make Nyan Cat even happier!
+//: Make bill even happier!
 let actionPlaySound = SKAction.playSoundFileNamed("ClintonBill.mp3", waitForCompletion: true)
 
 let replaySong = SKAction.repeatForever(actionPlaySound)
