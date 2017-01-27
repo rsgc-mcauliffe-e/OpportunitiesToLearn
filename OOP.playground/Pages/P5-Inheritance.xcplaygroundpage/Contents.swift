@@ -133,15 +133,16 @@ class Tiger: Animal {
 	}
 	
 }
-
 class Bear: Animal {
 	// complete the Bear class here, using the completed Tiger class as an example
-	
+	init(name: String) {
+		super.init(name: name, favouriteFood: "fish")
+	}
 	
 	// here, we override the sleep function
 	override func sleep() {
 		// add in your Bear-specific sleep code here
-		
+		print("\(self.name) hibernates for 4 months.")
 	}
 }
 
@@ -164,10 +165,10 @@ Pooh hibernates for 4 months
 
 */
 
-//let tigger = Tiger(name: "Tigger")
-//tigger.eat(food: "meat")
-//let pooh = Bear(name: "Pooh")
-//pooh.eat(food: "fish")
-//pooh.eat(food: "meat")
+let tigger = Tiger(name: "Tigger")
+tigger.eat(food: "meat")
+let pooh = Bear(name: "Pooh")
+pooh.eat(food: "fish")
+pooh.eat(food: "meat")
 
 //: [Previous](@previous) | [Next](@next)
